@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+    <title>VideoTube</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <figure class="header__figure">
+          <img src="./imgs/logo.png" alt="VideoTube logo" srcset="" />
+        </figure>
+        <ul class="figure__text">
+          <li>VideoTube</li>
+        </ul>
+        <ul class="header__search">
+          <li>
+            <input type="text" placeholder="Buscar Video" />
+            <button
+              type="button"
+              class="fa-solid fa-magnifying-glass fa-lg"
+            ></button>
+          </li>
+        </ul>
+        <section class="section__pro">
+          <ul>
+            <li class="subir__video">
+              <button type="button" class="fa-solid fa-plus"></button>
+            </li>
+            <li>
+              <figure class="profile">
+                <img src="/imgs/profile.png" alt="" srcset="" />
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <div class="main__botones">
+        <button name="all">Todos</button>
+        <button name="music">Musica</button>
+        <button name="vlog">Vlog</button>
+        <button name="webdev">Web</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__videos"></section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/a538994658.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/script.js" type="module"></script>
+  </body>
+</html>

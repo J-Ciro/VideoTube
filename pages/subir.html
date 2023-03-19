@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/subir.css" />
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+    <title>VideoTube</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <figure class="header__figure">
+          <img src="../imgs/logo.png" alt="VideoTube logo" srcset="" />
+        </figure>
+        <ul class="figure__text">
+          <li>VideoTube</li>
+        </ul>
+        <ul class="header__search">
+          <li>
+            <input type="text" placeholder="Buscar Video" />
+            <button
+              type="button"
+              class="fa-solid fa-magnifying-glass fa-lg"
+            ></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__subida">
+        <form class="section__form" id="form" name="form">
+          <label for="category">Categoria del Video</label><br />
+          <select name="categorias" id="categorias">
+            <option value="music">Music</option>
+            <option value="vlog">Vlog</option>
+            <option value="webdev">Webdev</option>
+          </select>
+          <br />
+
+          <label for="logo">Logo del Canal</label><br />
+          <input type="text" id="logo_canal" name="logo_canal" />
+          <br />
+
+          <label for="creador">Creador del Video</label><br />
+          <input type="text" id="creador_video" name="creador_video" />
+          <br />
+
+          <label for="duration">Duracion</label><br />
+          <input type="text" id="duracion_video" name="duration_video" />
+          <br />
+
+          <label for="titulo">Titulo</label><br />
+          <input type="text" id="titulo_video" name="titulo_video" />
+          <br />
+
+          <label for="thumbnail">Miniatura del Video</label><br />
+          <input type="text" id="thumbnail_video" name="thumbnail_video" />
+          <br />
+
+          <label for="url">URL del Video</label><br />
+          <input type="text" id="url_video" name="url_video" />
+          <br />
+
+          <section class="main__buttons">
+            <button type="button" class="datos">Enviar</button>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/a538994658.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/subir.js" type="module"></script>
+  </body>
+</html>

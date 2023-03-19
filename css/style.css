@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+.header__nav {
+  display: flex;
+  padding: 10px 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__figure img {
+  padding-left: 40px;
+  cursor: pointer;
+}
+.figure__text {
+  color: white;
+  list-style: none;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: center;
+  list-style: none;
+  padding-left: 60px;
+}
+.header__search input[type="text"] {
+  padding: 10px 16px;
+  gap: 10px;
+  width: 565px;
+  height: 40px;
+  border: 2px solid #a3a3a3;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #37373705;
+  color: white;
+}
+
+.header__search button[type="button"] {
+  position: relative;
+  height: 42px;
+  width: 87px;
+  border-radius: 0px 8px 8px 0px;
+  top: 1px;
+  right: 5px;
+  border: 0px;
+  color: #a3a3a3;
+  background-color: #373737;
+}
+
+.main__botones {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  gap: 24px;
+  padding-left: 40px;
+}
+
+.main__botones button {
+  padding: 6px;
+  border-radius: 15px;
+  background-color: #373737;
+  border: 2px solid #a3a3a3;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-weight: 400px;
+  font-size: 14px;
+}
+
+.header__tags li {
+  padding: 8px;
+  background-color: #373737;
+  border-radius: 44px;
+  border: 2px solid #a3a3a3;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header__tags li:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.main__videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 40px;
+  padding-top: 32px;
+  gap: 10px;
+}
+
+.main__videos .videos {
+  padding: 0px 0px 24px 0px;
+  width: 350px;
+}
+
+.video__figure {
+  width: 325px;
+  height: 170px;
+}
+
+.video__figure img {
+  width: 328px;
+  height: 170px;
+  border-radius: 13px;
+}
+
+.titulo {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.video__figure img:hover {
+  transform: scale(1.1);
+}
+.videos {
+  cursor: pointer;
+}
+.video__thumbail {
+  display: flex;
+  padding-top: 16px;
+}
+
+.video__thumbail img {
+  border-radius: 100%;
+  width: 100%;
+  height: 38px;
+}
+
+.video__description {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  text-align: left;
+}
+
+.video__info {
+  padding-left: 5px;
+  word-wrap: break-word;
+  width: 328px;
+  padding-top: 16px;
+}
+
+.video__figure span {
+  position: relative;
+  top: -35px;
+  left: 280px;
+  background-color: #161616;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+
+.video__info h1 {
+  font-weight: bold;
+  font-size: 14px;
+  padding-bottom: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.video__info p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.subir__video button {
+  color: white;
+  background-color: #373737;
+  border: 0px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section__pro li {
+  list-style: none;
+}
+.section__pro ul {
+  display: flex;
+  gap: 10px;
+  padding-left: 57vh;
+}
+
+.section__pro img {
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  border: 3px solid #373737;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__videos {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .header__search {
+    display: none;
+  }
+  .section__pro ul {
+    padding-left: 200px;
+  }
+  .main__botones button {
+    padding: 8px 16px 8px 16px;
+    border-radius: 44px;
+    font-weight: 400px;
+    font-size: 14px;
+  }
+  .main__botones {
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
