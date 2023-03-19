@@ -1,4 +1,4 @@
-# VideoTube :earth_americas:
+# :video_camera: VideoTube
 VideoTube - Youtube project
 
 
